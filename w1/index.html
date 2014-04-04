@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FWF | Shopping List</title>
+<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body ng-app>
+    <div class="container" ng-controller="myController">
+        <h1>ShopList</h1>
+
+        <div id="addField">
+            <input class='addItemInput' placeholder="" type="text" ng-model="itemInput">
+            <button class="submitButton" type="submit" ng-click="addItem()">Add Item</button>
+        </div>
+        <hr>
+        <!-- Template for Items -->
+        <ul id="itemContainer">
+            <li ng-repeat="item in itemArray">
+                {{ item }}
+                <button class="glyphicon glyphicon-remove-circle" ng-click="delItem(item)"></button>
+            </li>
+        </ul>
+
+    </div>
+    <footer>
+        <hr>
+        <p>&copy; Christian Heyd 2014</p>
+    </footer>
+    <script src="js/angular.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>

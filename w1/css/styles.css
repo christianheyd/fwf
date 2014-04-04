@@ -1,0 +1,109 @@
+body{
+    background: #597a93;
+}
+
+h1{
+    color: white;
+    font-family: 'Leckerli One', cursive;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, .8);
+    font-size: 4.2em;
+}
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.addField{
+    margin: 140px;
+
+}
+
+.addItemInput{
+    width: 90%;
+    margin: 50px auto 20px auto;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    background: #85b6dc;
+    color: white;
+    font-size: 2.2em;
+    display: block;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, .3  );
+    transition: background .5s;
+}
+
+.addItemInput:focus{
+    background:#76a1c3;
+}
+
+.submitButton{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    background: #85b6dc;
+    border: none;
+    padding: 20px;
+    border-radius: 4px;
+    color: white;
+    font-size: 2em;
+    transition: background .5s;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, .3  );
+}
+
+.submitButton:hover{
+    background:#76a1c3;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#itemContainer{
+    padding: 0;
+    padding-top: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#itemContainer li{
+    width: 90%;
+    margin: 0 auto;
+    background:#76a1c3;
+    padding: 20px;
+    border-radius: 4px;
+    list-style: none;
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+    transition: background .3s;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, .3  );
+}
+
+#itemContainer li button{
+    margin-top: 11px;
+    color: white;
+    float: right;
+    background: none;
+    border: none;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, .3  );
+    transition: color .5s;
+}
+
+#itemContainer li button:hover{
+    color: #8fc4ed;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+
+footer p{
+    position: relative;
+    left: 44.3%
+}
